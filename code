@@ -1,5 +1,5 @@
 #Mempersiapkan data
-pelanggan <- read.csv("E://DQLab/R/Marketing/customer_segments.txt", sep="\t")
+pelanggan <- read.csv("https://academy.dqlab.id/dataset/customer_segments.txt", sep="\t")
 pelanggan_matrix <- data.matrix(pelanggan[c("Jenis.Kelamin", "Profesi", "Tipe.Residen")])
 pelanggan <- data.frame(pelanggan, pelanggan_matrix)
 Profesi <- unique(pelanggan[c("Profesi","Profesi.1")])
